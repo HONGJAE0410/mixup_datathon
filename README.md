@@ -13,7 +13,6 @@
 
 * **주요 실험 내용**:
 
-  * ***실험 진행 방식 작성***
     1) 싱글 턴을 사용하여 프롬프트 엔지니어링 (문법 오류 정의 / CoT 설계 / Few-Shot) 
     2) RAG 전후의 성능 변화 확인 
     3) EDA를 통해 싱글턴으로 교정하지 못한 오류 포착
@@ -30,26 +29,27 @@ git clone https://github.com/HONGJAE0410/mixup_datathon.git
 cd your-repo/code
 ```
 
-### 라이브러리 설치
+### 2. 라이브러리 설치
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 실험 실행
+### 3. 실험 실행
 
 ```bash
 cd ..
->Mac : export PYTHONPATH=$(pwd)
->Window : set PYTHONPATH=%cd%
+# Mac : export PYTHONPATH=$(pwd)
+# Window : set PYTHONPATH=%cd%
 python code/main.py
 ```
 
-> 입력 파일:
+### 4. 사용 데이터
+-  입력 파일:
 > - `./data/train.csv`: 훈련 데이터 (err_sentence, cor_sentence 포함)
 > - `./data/test.csv`: 테스트용 문장 목록 (id, err_sentence 포함)
 
-> 출력 파일:
+-  출력 파일:
 > - `submission_baseline.csv`: 교정 결과 저장 파일
 
 
