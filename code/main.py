@@ -25,7 +25,7 @@ def main():
 
     base_config = ExperimentConfig(template_name='prompt_chain')
     train = pd.read_csv(os.path.join(base_config.data_dir, 'train.csv'))
-    test = pd.read_csv(os.path.join(base_config.data_dir, '17.csv'))
+    test = pd.read_csv(os.path.join(base_config.data_dir, 'test.csv'))
 
     # pos_pattern 생성
     train = ensure_pos_pattern_column(train)
